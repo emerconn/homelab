@@ -40,13 +40,19 @@ spec:
           - key: "node-role.kubernetes.io/control-plane"
             effect: "NoSchedule"
             operator: "Exists"
+    - target:
+        kind: Kustomization
+        name: flux-system
+      patch: |
+        - op: add
+          path: /spec/decryption
+          value:
+            provider: sops
+            secretRef:
+              name: sops-age
   sync:
     kind: GitRepository
     url: "https://github.com/emerconn/homelab.git"
     ref: "refs/heads/main"
     path: "k8s/flux/clusters/tal-clu-1"
     pullSecret: "flux-system"
-    decryption:
-      provider: sops
-      secretRef:
-        name: sops-age
