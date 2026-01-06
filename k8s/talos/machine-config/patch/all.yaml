@@ -26,7 +26,7 @@ cluster:
 machine:
   install:
     # Image with intel-ucode, i915-ucode, iscsi-tools & btrfs
-    image: factory.talos.dev/installer/0b4f48281e59712995bea152e8e62f3082be4ab66d2bdd0ca83cb3ce8c4509a9:v1.11.5
+    image: factory.talos.dev/installer/0b4f48281e59712995bea152e8e62f3082be4ab66d2bdd0ca83cb3ce8c4509a9:v1.12.1
     wipe: true
     extraKernelArgs:
     # https://www.talos.dev/v1.8/talos-guides/configuration/performance-tuning/
