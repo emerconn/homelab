@@ -18,7 +18,7 @@ spec:
         kind: HelmRepository
         name: opentelemetry
         namespace: flux-system
-      version: "0.81.0"
+      version: "0.105.1"
   interval: 1h
   timeout: 10m
   install:
