@@ -21,7 +21,7 @@ cluster:
   proxy:
     disabled: true # use Cilium with manual deploy, then managed by Flux
   scheduler:
-    image: registry.k8s.io/kube-scheduler:v1.35.0
+    image: registry.k8s.io/kube-scheduler:v1.35.1
 
 machine:
   install:
