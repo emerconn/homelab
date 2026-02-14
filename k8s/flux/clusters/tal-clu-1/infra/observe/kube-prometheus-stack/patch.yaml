@@ -42,6 +42,7 @@ spec:
     prometheus:
       enabled: true
       prometheusSpec:
+        scrapeInterval: 10s
         nodeSelector:
           node-role.kubernetes.io/control-plane: ""
         tolerations:
