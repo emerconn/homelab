@@ -1,14 +1,14 @@
 cluster:
   allowSchedulingOnControlPlanes: false
   apiServer:
-    image: registry.k8s.io/kube-apiserver:v1.35.0
+    image: registry.k8s.io/kube-apiserver:v1.35.1
     certSANs:
     - vip.tal-clu-1.hl.emerconn.com
     - cp-01.tal-clu-1.hl.emerconn.com
     - cp-02.tal-clu-1.hl.emerconn.com
     - cp-03.tal-clu-1.hl.emerconn.com
   controllerManager:
-    image: registry.k8s.io/kube-controller-manager:v1.35.0
+    image: registry.k8s.io/kube-controller-manager:v1.35.1
   coreDNS:
     disabled: true # manual deploy, then managed by Flux
   extraManifests: []
@@ -21,7 +21,7 @@ cluster:
   proxy:
     disabled: true # use Cilium with manual deploy, then managed by Flux
   scheduler:
-    image: registry.k8s.io/kube-scheduler:v1.35.0
+    image: registry.k8s.io/kube-scheduler:v1.35.1
 
 machine:
   install:
@@ -36,7 +36,7 @@ machine:
   sysctls:
     vm.max_map_count: 262144 # required for Wazuh/OpenSearch (ElasticSearch)
   kubelet:
-    image: ghcr.io/siderolabs/kubelet:v1.35.0
+    image: ghcr.io/siderolabs/kubelet:v1.35.1
     extraArgs:
       rotate-server-certificates: true # for metrics server
   network:
