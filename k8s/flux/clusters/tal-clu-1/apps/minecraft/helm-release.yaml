@@ -49,7 +49,7 @@ spec:
       dataDir:
         enabled: true
         Size: 10Gi
-        existingClaim: "pvc-fc5104f6-be9b-4a55-8310-15820278830c"
+        # existingClaim: "pvc-fc5104f6-be9b-4a55-8310-15820278830c"
     resources:
       requests:
         memory: 2Gi
