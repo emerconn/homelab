@@ -1,7 +1,7 @@
 cluster:
   allowSchedulingOnControlPlanes: false
   apiServer:
-    image: registry.k8s.io/kube-apiserver:v1.35.0
+    image: registry.k8s.io/kube-apiserver:v1.35.1
     certSANs:
     - vip.tal-clu-1.hl.emerconn.com
     - cp-01.tal-clu-1.hl.emerconn.com
