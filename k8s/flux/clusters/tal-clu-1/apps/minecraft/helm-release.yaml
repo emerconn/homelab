@@ -43,7 +43,7 @@ spec:
       storageClass: "synology-ext4-retain"
       dataDir:
         enabled: true
-        Size: 10Gi
+        size: 10Gi
     resources:
       requests:
         memory: 2Gi
