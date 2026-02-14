@@ -26,4 +26,11 @@ spec:
       retries: 3
   values:
     minecraftServer:
-      eula: true
+      eula: "TRUE"
+      version: "1.21.11"
+      type: "FORGE"
+      forgeVersion: "1.21.11-61.0.10"
+      forgeInstallerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.0.10/forge-1.21.11-61.0.10-installer.jar
+    persistence:
+      enabled: true
+      storageClass: "synology-ext4-retain"
