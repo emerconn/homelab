@@ -27,3 +27,6 @@ spec:
   valuesFrom:
   - kind: ConfigMap
     name: helm-values
+  values:
+    minecraftServer:
+      eula: true
