@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: piraeus
         namespace: flux-system
-      version: "4.2.0"
+      version: "5.0.2"
   values:
     controller:
       nodeSelector:
