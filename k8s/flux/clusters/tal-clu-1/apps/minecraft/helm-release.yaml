@@ -24,9 +24,6 @@ spec:
     cleanupOnFail: true
     remediation:
       retries: 3
-  valuesFrom:
-  - kind: ConfigMap
-    name: helm-values
   values:
     minecraftServer:
       eula: true
