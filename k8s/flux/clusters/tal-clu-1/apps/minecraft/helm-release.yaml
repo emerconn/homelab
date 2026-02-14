@@ -36,6 +36,7 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
+      downloadModpackUrl: https://www.curseforge.com/minecraft/modpacks/all-the-mods-10/download/7558573
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
