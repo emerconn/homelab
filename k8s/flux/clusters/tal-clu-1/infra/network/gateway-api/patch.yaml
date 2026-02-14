@@ -6,4 +6,4 @@ metadata:
 spec:
   url: https://github.com/kubernetes-sigs/gateway-api.git
   ref:
-    tag: v1.4.0
+    tag: v1.4.1
