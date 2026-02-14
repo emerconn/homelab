@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: prometheus-community
         namespace: flux-system
-      version: "79.12.0"
+      version: "81.6.9"
   values:
     # Prometheus Operator: manages Prometheus/Alertmanager CRDs and lifecycle
     prometheusOperator:
