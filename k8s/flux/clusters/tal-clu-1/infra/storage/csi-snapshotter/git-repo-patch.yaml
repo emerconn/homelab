@@ -6,4 +6,4 @@ metadata:
 spec:
   url: https://github.com/kubernetes-csi/external-snapshotter.git
   ref:
-    tag: v8.4.0
+    tag: v8.5.0
