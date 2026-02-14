@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: load-balancer
+  namespace: minecraft
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 172.21.0.173
+  selector:
+    app: valheim
+  ports:
+  - name: steam-1
+    port: 2456
+    protocol: UDP
+  - name: steam-2
+    port: 2457
+    protocol: UDP
+  - name: supervisor
+    port: 9001
+    protocol: TCP
+  # firewall port forwarding:
+  # WAN 26908-26909 UDP > 172.21.0.176 2456-2457 UDP
