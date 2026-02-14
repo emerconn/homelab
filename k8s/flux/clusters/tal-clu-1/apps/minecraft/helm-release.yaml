@@ -28,15 +28,17 @@ spec:
     minecraftServer:
       eula: "TRUE"
       version: "1.21.11"
-      type: "FORGE"
-      forgeVersion: "1.21.11-61.0.10"
-      forgeInstallerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.0.10/forge-1.21.11-61.0.10-installer.jar
+      # type: "FORGE"
+      # forgeVersion: "1.21.11-61.0.10"
+      # forgeInstallerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.0.10/forge-1.21.11-61.0.10-installer.jar
+      type: "FABRIC"
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      downloadModpackUrl: https://mediafilez.forgecdn.net/files/7097/953/All%20the%20Mods%209-1.1.1.zip
+      # downloadModpackUrl: https://mediafilez.forgecdn.net/files/7097/953/All%20the%20Mods%209-1.1.1.zip
+      downloadModpackUrl: https://cdn.modrinth.com/data/1KVo5zza/versions/tXVlmUkV/Fabulously.Optimized-v12.0.2.mrpack
       removeOldMods: true
       memory: 10240M
       jvmOpts: "-Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true"
