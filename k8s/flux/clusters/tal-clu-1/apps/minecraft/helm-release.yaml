@@ -37,6 +37,7 @@ spec:
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
       downloadModpackUrl: https://www.curseforge.com/minecraft/modpacks/all-the-mods-10/download/7558573
+      removeOldMods: true
       memory: 10240M
     persistence:
       storageClass: "synology-ext4-retain"
