@@ -36,7 +36,7 @@ machine:
   sysctls:
     vm.max_map_count: 262144 # required for Wazuh/OpenSearch (ElasticSearch)
   kubelet:
-    image: ghcr.io/siderolabs/kubelet:v1.35.0
+    image: ghcr.io/siderolabs/kubelet:v1.35.1
     extraArgs:
       rotate-server-certificates: true # for metrics server
   network:
