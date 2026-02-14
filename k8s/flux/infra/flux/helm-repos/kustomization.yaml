@@ -16,6 +16,7 @@ resources:
 - fluent.yaml
 - headlamp.yaml
 - infisical.yaml
+- itzg-minecraft-server-charts.yaml
 - jetstack.yaml
 - kubeclarity.yaml
 - metrics-server.yaml
