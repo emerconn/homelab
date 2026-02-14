@@ -8,7 +8,7 @@ cluster:
     - cp-02.tal-clu-1.hl.emerconn.com
     - cp-03.tal-clu-1.hl.emerconn.com
   controllerManager:
-    image: registry.k8s.io/kube-controller-manager:v1.35.0
+    image: registry.k8s.io/kube-controller-manager:v1.35.1
   coreDNS:
     disabled: true # manual deploy, then managed by Flux
   extraManifests: []
