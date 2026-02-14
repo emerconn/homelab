@@ -1,0 +1,29 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: minecraft
+  namespace: flux-system
+spec:
+  releaseName: minecraft
+  targetNamespace: minecraft
+  chart:
+    spec:
+      chart: minecraft
+      sourceRef:
+        kind: HelmRepository
+        name: itzg-minecraft-server-charts
+        namespace: flux-system
+      version: "5.1.1"
+  interval: 1h
+  timeout: 10m
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    force: true
+    cleanupOnFail: true
+    remediation:
+      retries: 3
+  valuesFrom:
+  - kind: ConfigMap
+    name: helm-values
