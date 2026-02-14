@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: minecraft
 resources:
 - helm-release.yaml
-- helm-values.yaml
 - namespace.yaml
 
 configMapGenerator:
