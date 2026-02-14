@@ -36,7 +36,7 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      downloadModpackUrl: https://edge.forgecdn.net/files/7577/535/ATM10%20To%20the%20Sky-1.9.1.zip
+      downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/573/All%20the%20Mods%2010-5.5.zip
       removeOldMods: true
       memory: 10240M
       jvmOpts: "-Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true"
