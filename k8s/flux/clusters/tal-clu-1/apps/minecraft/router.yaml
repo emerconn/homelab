@@ -43,6 +43,8 @@ spec:
     allowDeny:
       global:
         allowlist:
+        - name: NemmyBangz
+          uuid: 09c2efd-fddc-4dfc-8589-b22453977448
         - name: Narutoooooooo
           uuid: 57bd3028-0a39-4786-ab3c-1360145a3773
         - name: kinowithluv
