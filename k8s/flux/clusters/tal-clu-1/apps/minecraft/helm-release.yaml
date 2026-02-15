@@ -30,7 +30,7 @@ spec:
     minecraftServer:
       eula: "TRUE"
       type: "NEOFORGE"
-      version: "1.21.11"
+      version: "1.21.10"
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       # type: "FORGE"
@@ -47,6 +47,8 @@ spec:
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
+    extraEnv:
+      NEOFORGE_VERSION: "21.10.64"
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
