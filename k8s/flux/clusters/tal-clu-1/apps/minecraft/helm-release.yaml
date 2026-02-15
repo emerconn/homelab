@@ -44,7 +44,7 @@ spec:
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
     extraEnv:
-      NEOFORGE_VERSION: "21.11.38-beta"
+      NEOFORGE_VERSION: "beta"
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
