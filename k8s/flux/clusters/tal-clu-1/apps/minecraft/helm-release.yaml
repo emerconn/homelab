@@ -41,6 +41,7 @@ spec:
       cfServerMod: "https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip"
       removeOldMods: true
       whitelist: "NemmyBangz, Narutoooooooo, kinowithluv"
+      ops: "NemmyBangz"
       motd: "nemmy lives here"
     persistence:
       storageClass: "synology-ext4-retain"
