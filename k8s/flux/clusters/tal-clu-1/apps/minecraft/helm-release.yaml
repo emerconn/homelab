@@ -30,16 +30,7 @@ spec:
     minecraftServer:
       eula: "TRUE"
       version: "1.21.1"
-      type: "AUTO_CURSEFORGE" # auto-downloads mods + NeoForge
-      autoCurseForge:
-        apiKey:
-          existingSecret: "cf-api-key"
-          secretKey: "cf-api-key"
-        slug: "all-the-mods-10"
-        filenameMatcher: "5.5"
-        # excludeMods: []
-        # parallelDownloads: 8
-        # forceSynchronize: true
+      type: "NEOFORGE" # auto-downloads mods + NeoForge
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
@@ -47,6 +38,7 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
+      downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
