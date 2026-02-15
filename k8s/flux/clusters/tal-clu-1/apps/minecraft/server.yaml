@@ -36,8 +36,6 @@ spec:
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
       servicePort: 25565
-      serviceAnnotations:
-        mc-router.itzg.me/externalServerName: "mc.emerconn.com"
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
       cfServerMod: "https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip"
@@ -47,6 +45,8 @@ spec:
       motd: "nemmy lives here"
       rcon:
         enabled: true
+    serviceAnnotations:
+      mc-router.itzg.me/externalServerName: mc.emerconn.com
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
