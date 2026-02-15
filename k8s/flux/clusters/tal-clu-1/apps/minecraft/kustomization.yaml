@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
 - helm-release.yaml
 - namespace.yaml
-- secret-sops-cf-api-key.yaml
