@@ -30,7 +30,7 @@ spec:
     minecraftServer:
       eula: "TRUE"
       version: "1.21.1"
-      type: "NEOFORGE" # auto-downloads mods + NeoForge
+      type: "CURSEFORGE" # auto-downloads mods + NeoForge
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
