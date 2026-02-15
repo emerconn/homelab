@@ -38,10 +38,8 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      # downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip
       cfServerMod: "https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip"
       removeOldMods: true
-      icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
     persistence:
@@ -54,9 +52,9 @@ spec:
         memory: 8Gi
         cpu: 1
       limits:
-        memory: 12Gi
-        cpu: 4
+        memory: 16Gi
+        cpu: 7
     livenessProbe:
-      initialDelaySeconds: 180
+      initialDelaySeconds: 300
     readinessProbe:
-      initialDelaySeconds: 180
+      initialDelaySeconds: 300
