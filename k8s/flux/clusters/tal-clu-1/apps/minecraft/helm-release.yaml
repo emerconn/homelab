@@ -29,8 +29,11 @@ spec:
     strategyType: RollingUpdate
     minecraftServer:
       eula: "TRUE"
-      version: "1.21.11"
       type: "FABRIC"
+      version: "1.21.11"
+      memory: 10240M
+      jvmOpts: "-Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true" # Aikar's flags
+      jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       # type: "FORGE"
       # forgeVersion: "1.21.11-61.0.10"
       # forgeInstallerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.0.10/forge-1.21.11-61.0.10-installer.jar
@@ -42,9 +45,6 @@ spec:
       # downloadModpackUrl: https://mediafilez.forgecdn.net/files/7097/953/All%20the%20Mods%209-1.1.1.zip
       downloadModpackUrl: https://cdn.modrinth.com/data/1KVo5zza/versions/tXVlmUkV/Fabulously.Optimized-v12.0.2.mrpack
       removeOldMods: true
-      memory: 10240M
-      jvmOpts: "-Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true"
-      # jvmXXOpts: "-XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+ParallelRefProcEnabled -XX:+PerfDisableSharedMem -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1HeapRegionSize=8M -XX:G1HeapWastePercent=5 -XX:G1MaxNewSizePercent=40 -XX:G1MixedGCCountTarget=4 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1NewSizePercent=30 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:G1ReservePercent=20 -XX:InitiatingHeapOccupancyPercent=15 -XX:MaxGCPauseMillis=200 -XX:MaxTenuringThreshold=1 -XX:SurvivorRatio=32"
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
@@ -53,7 +53,6 @@ spec:
       dataDir:
         enabled: true
         Size: 15Gi
-        # existingClaim: "pvc-9899d381-3785-464e-8a63-3e6f07fef199"
     resources:
       requests:
         memory: 2Gi
