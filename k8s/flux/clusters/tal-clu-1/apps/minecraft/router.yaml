@@ -38,4 +38,5 @@ spec:
       minecraft:
         type: LoadBalancer
         port: 25565
+      extraServiceSpec:
         loadBalancerIP: 172.21.0.174
