@@ -34,7 +34,7 @@ spec:
           after: 15m
       metrics:
         backend: prometheus
-    serivces:
+    services:
       minecraft:
         type: LoadBalancer
         port: 25565
