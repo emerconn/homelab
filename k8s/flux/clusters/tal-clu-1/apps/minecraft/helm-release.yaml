@@ -31,7 +31,7 @@ spec:
       eula: "TRUE"
       version: "1.21.1"
       type: "CURSEFORGE"
-      memory: 16G
+      memory: 10G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
@@ -50,10 +50,10 @@ spec:
         Size: 15Gi
     resources:
       requests:
-        memory: 16Gi
+        memory: 10Gi
         cpu: 2
       limits:
-        memory: 16Gi
+        memory: 10Gi
         cpu: 7
     livenessProbe:
       initialDelaySeconds: 180
@@ -69,3 +69,6 @@ spec:
       timeoutSeconds: 1
     rcon:
       enabled: true
+    extraEnv:
+      USE_MEOWICE_FLAGS:
+        value: true
