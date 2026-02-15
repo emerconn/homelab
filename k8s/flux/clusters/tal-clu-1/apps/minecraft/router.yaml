@@ -40,3 +40,10 @@ spec:
         port: 25565
       extraServiceSpec:
         loadBalancerIP: 172.21.0.174
+    allowDeny:
+      global:
+        allowlist:
+        - name: Narutoooooooo
+          uuid: 57bd3028-0a39-4786-ab3c-1360145a3773
+        - name: kinowithluv
+          uuid: 7ee7efb7-033c-4a00-94f2-98f7bfe7787d
