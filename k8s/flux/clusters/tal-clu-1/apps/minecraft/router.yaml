@@ -50,4 +50,4 @@ spec:
         - name: kinowithluv
           uuid: 7ee7efb7-033c-4a00-94f2-98f7bfe7787d
     extraEnv:
-      AUTO_SCALE_ASLEEP_MOTD: "Server warming up... try again in a few minutes!"
+      AUTO_SCALE_ASLEEP_MOTD: "Server starting up..."
