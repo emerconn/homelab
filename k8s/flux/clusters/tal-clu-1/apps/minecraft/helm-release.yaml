@@ -55,6 +55,14 @@ spec:
         memory: 16Gi
         cpu: 7
     livenessProbe:
-      initialDelaySeconds: 300
+      initialDelaySeconds: 180
+      periodSeconds: 10
+      failureThreshold: 30
+      successThreshold: 1
+      timeoutSeconds: 1
     readinessProbe:
-      initialDelaySeconds: 300
+      initialDelaySeconds: 180
+      periodSeconds: 10
+      failureThreshold: 30
+      successThreshold: 1
+      timeoutSeconds: 1
