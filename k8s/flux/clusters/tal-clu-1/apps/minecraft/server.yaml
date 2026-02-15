@@ -33,9 +33,9 @@ spec:
       type: "CURSEFORGE"
       memory: 10G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
-      serviceType: ClusterIP
-      # serviceType: LoadBalancer
-      # loadBalancerIP: 172.21.0.173
+      # serviceType: ClusterIP
+      serviceType: LoadBalancer
+      loadBalancerIP: 172.21.0.173
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
