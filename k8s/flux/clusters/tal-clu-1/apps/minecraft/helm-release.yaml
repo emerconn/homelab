@@ -31,7 +31,7 @@ spec:
       eula: "TRUE"
       version: "1.21.1"
       type: "CURSEFORGE"
-      memory: 8G
+      memory: 16G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
@@ -67,3 +67,5 @@ spec:
       failureThreshold: 50
       successThreshold: 1
       timeoutSeconds: 1
+    rcon:
+      enabled: true
