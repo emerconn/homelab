@@ -1,0 +1,36 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: mc-router
+  namespace: flux-system
+spec:
+  releaseName: mc-router
+  targetNamespace: minecraft
+  chart:
+    spec:
+      chart: mc-router
+      sourceRef:
+        kind: HelmRepository
+        name: itzg-minecraft-server-charts
+        namespace: flux-system
+      version: "1.4.1"
+  interval: 1h
+  timeout: 10m
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    force: true
+    cleanupOnFail: true
+    remediation:
+      retries: 3
+  values:
+    minecraftRouter:
+      autoScale:
+        up:
+          enabled: true
+        down:
+          enabled: true
+          after: 15m
+      metrics:
+        backend: prometheus
