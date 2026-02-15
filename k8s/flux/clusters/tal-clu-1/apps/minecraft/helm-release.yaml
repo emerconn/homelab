@@ -50,8 +50,8 @@ spec:
         Size: 15Gi
     resources:
       requests:
-        memory: 8Gi
-        cpu: 1
+        memory: 16Gi
+        cpu: 2
       limits:
         memory: 16Gi
         cpu: 7
