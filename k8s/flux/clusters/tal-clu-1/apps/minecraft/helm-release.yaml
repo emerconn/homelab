@@ -42,7 +42,7 @@ spec:
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
       # downloadModpackUrl: https://mediafilez.forgecdn.net/files/7097/953/All%20the%20Mods%209-1.1.1.zip
-      downloadModpackUrl: https://cdn.modrinth.com/data/1KVo5zza/versions/tXVlmUkV/Fabulously.Optimized-v12.0.2.mrpack
+      # downloadModpackUrl: https://cdn.modrinth.com/data/1KVo5zza/versions/tXVlmUkV/Fabulously.Optimized-v12.0.2.mrpack
       removeOldMods: true
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
