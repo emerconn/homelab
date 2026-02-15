@@ -30,7 +30,7 @@ spec:
     minecraftServer:
       eula: "TRUE"
       type: "NEOFORGE"
-      version: "1.21.10"
+      version: "1.21.11"
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
@@ -44,7 +44,7 @@ spec:
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
     extraEnv:
-      NEOFORGE_VERSION: "21.10.64"
+      NEOFORGE_VERSION: "21.11.38-beta"
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
