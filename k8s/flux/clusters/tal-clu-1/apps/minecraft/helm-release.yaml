@@ -32,7 +32,7 @@ spec:
       type: "FABRIC"
       version: "1.21.11"
       memory: 8G
-      # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
+      jvmOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       # type: "FORGE"
       # forgeVersion: "1.21.11-61.0.10"
       # forgeInstallerUrl: https://maven.minecraftforge.net/net/minecraftforge/forge/1.21.11-61.0.10/forge-1.21.11-61.0.10-installer.jar
