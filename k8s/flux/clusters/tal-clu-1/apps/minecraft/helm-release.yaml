@@ -56,13 +56,13 @@ spec:
         cpu: 7
     livenessProbe:
       initialDelaySeconds: 180
-      periodSeconds: 10
-      failureThreshold: 30
+      periodSeconds: 5
+      failureThreshold: 50
       successThreshold: 1
       timeoutSeconds: 1
     readinessProbe:
       initialDelaySeconds: 180
-      periodSeconds: 10
-      failureThreshold: 30
+      periodSeconds: 5
+      failureThreshold: 50
       successThreshold: 1
       timeoutSeconds: 1
