@@ -38,7 +38,7 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/573/All%20the%20Mods%2010-5.5.zip
+      # downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/573/All%20the%20Mods%2010-5.5.zip
       removeOldMods: true
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
