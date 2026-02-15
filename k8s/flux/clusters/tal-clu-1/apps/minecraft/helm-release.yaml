@@ -29,7 +29,7 @@ spec:
     strategyType: RollingUpdate
     minecraftServer:
       eula: "TRUE"
-      type: "FABRIC"
+      type: "NEOFORGE"
       version: "1.21.11"
       memory: 8G
       jvmXXOpts: "+UseZGC +UseCompactObjectHeaders"
