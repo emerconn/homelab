@@ -73,6 +73,7 @@ spec:
 
     # Grafana: dashboards, data sources, auth and persistent storage for the UI
     grafana:
+      defaultDashboardsInterval: 10s
       sidecar:
         dashboards:
           enabled: true
