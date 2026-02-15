@@ -29,8 +29,17 @@ spec:
     strategyType: RollingUpdate
     minecraftServer:
       eula: "TRUE"
-      type: "NEOFORGE"
-      version: "1.21.11"
+      version: "1.21.1"
+      type: "AUTO_CURSEFORGE" # auto-downloads mods + NeoForge
+      autoCurseForge:
+        apiKey:
+          existingSecret: curseforge-api-key
+          secretKey: key
+        slug: "all-the-mods-10"
+        filenameMatcher: "5.5"
+        # excludeMods: []
+        parallelDownloads: 8
+        forceSynchronize: true
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
@@ -38,13 +47,10 @@ spec:
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      downloadModpackUrl: https://mediafilez.forgecdn.net/files/7558/573/All%20the%20Mods%2010-5.5.zip
       removeOldMods: true
       icon: https://github.com/emerconn/homelab/blob/main/k8s/flux/clusters/tal-clu-1/apps/minecraft/usa.png?raw=true
       whitelist: "NemmyBangz"
       motd: "nemmy lives here"
-    extraEnv:
-      NEOFORGE_VERSION: "beta"
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
