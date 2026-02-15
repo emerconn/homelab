@@ -43,6 +43,8 @@ spec:
       whitelist: "NemmyBangz, Narutoooooooo, kinowithluv"
       ops: "NemmyBangz"
       motd: "nemmy lives here"
+      rcon:
+        enabled: true
     persistence:
       storageClass: "synology-ext4-retain"
       dataDir:
@@ -67,8 +69,6 @@ spec:
       failureThreshold: 50
       successThreshold: 1
       timeoutSeconds: 1
-    rcon:
-      enabled: true
     extraEnv:
       USE_MEOWICE_FLAGS:
         value: true
