@@ -33,8 +33,8 @@ spec:
       type: "AUTO_CURSEFORGE" # auto-downloads mods + NeoForge
       autoCurseForge:
         apiKey:
-          existingSecret: curseforge-api-key
-          secretKey: key
+          existingSecret: "cf-api-key"
+          secretKey: "cf-api-key"
         slug: "all-the-mods-10"
         filenameMatcher: "5.5"
         # excludeMods: []

@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - helm-release.yaml
 - namespace.yaml
-- secret-sops-curseforge-api-key.yaml
+- secret-sops-cf-api-key.yaml
