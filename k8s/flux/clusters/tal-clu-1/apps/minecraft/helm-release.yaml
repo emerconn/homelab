@@ -38,8 +38,8 @@ spec:
         slug: "all-the-mods-10"
         filenameMatcher: "5.5"
         # excludeMods: []
-        parallelDownloads: 8
-        forceSynchronize: true
+        # parallelDownloads: 8
+        # forceSynchronize: true
       memory: 8G
       # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
       serviceType: LoadBalancer
