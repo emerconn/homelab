@@ -45,9 +45,13 @@ spec:
         allowlist:
         - name: NemmyBangz
           uuid: 909c2efd-fddc-4dfc-8589-b22453977448
-        - name: Narutoooooooo
+        - name: Narutoooooooo # Tyler / Love
           uuid: 57bd3028-0a39-4786-ab3c-1360145a3773
         - name: kinowithluv
           uuid: 7ee7efb7-033c-4a00-94f2-98f7bfe7787d
+        - name: TheMadMoos
+          # uuid: 
+        - name: VII_Rook
+          # uuid:
     extraEnv:
       AUTO_SCALE_ASLEEP_MOTD: "Server starting up..."

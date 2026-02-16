@@ -14,16 +14,16 @@ spec:
         name: itzg-minecraft-server-charts
         namespace: flux-system
       version: "5.1.1"
-  interval: 1h
   timeout: 10m
+  interval: 1h
   install:
     remediation:
       retries: 3
   upgrade:
     force: true
-    cleanupOnFail: true
     remediation:
       retries: 3
+    cleanupOnFail: true
   values:
     workloadAsStatefulSet: true
     strategyType: RollingUpdate
@@ -32,16 +32,14 @@ spec:
       version: "1.21.1"
       type: "CURSEFORGE"
       memory: 10G
-      # jvmXXOpts: "-XX:+UseZGC -XX:+UseCompactObjectHeaders"
-      # serviceType: ClusterIP
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
       servicePort: 25565
       # firewall port forwarding:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
-      cfServerMod: "https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip"
+      cfServerMod: https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip
       removeOldMods: true
-      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv"
+      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv, TheMadMoos, VII_Rook"
       ops: "NemmyBangz"
       motd: "nemmy lives here"
       rcon:
@@ -49,28 +47,28 @@ spec:
     serviceAnnotations:
       mc-router.itzg.me/externalServerName: mc.emerconn.com
     persistence:
-      storageClass: "synology-ext4-retain"
+      storageClass: synology-ext4-retain
       dataDir:
         enabled: true
         Size: 15Gi
     resources:
       requests:
-        memory: 10Gi
         cpu: 2
-      limits:
         memory: 10Gi
+      limits:
         cpu: 7
+        memory: 10Gi
     livenessProbe:
-      initialDelaySeconds: 180
       periodSeconds: 5
-      failureThreshold: 50
-      successThreshold: 1
       timeoutSeconds: 1
+      successThreshold: 1
+      failureThreshold: 50
+      initialDelaySeconds: 180
     readinessProbe:
-      initialDelaySeconds: 180
       periodSeconds: 5
-      failureThreshold: 50
-      successThreshold: 1
       timeoutSeconds: 1
+      successThreshold: 1
+      failureThreshold: 50
+      initialDelaySeconds: 180
     extraEnv:
       USE_MEOWICE_FLAGS: true
