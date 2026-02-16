@@ -53,5 +53,11 @@ spec:
           uuid: 3406867a-1305-4d4d-b401-7879262d2a8c
         - name: AntacusBantacus
           uuid: 9b9219b4-8c88-491a-877b-c220d0fc93fc
+        - name: pipebombsales # Ellie
+          uuid: 2944e0e9-4a97-4872-8f65-52a440257ebf
+        - name: YIG_BAN # BIG_YAN
+          uuid: 5bb132e1-51d9-4719-a364-47694d8ba2db
+        - name: vapidyne
+          uuid: 9cb26bc0-246d-4310-a38f-8e9b32a826cd
     extraEnv:
       AUTO_SCALE_ASLEEP_MOTD: "Server starting up..."
