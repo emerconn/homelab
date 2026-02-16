@@ -2,8 +2,8 @@
 
   # homelab
 
-  [![flux](https://github.com/emerconnelly/homelab/actions/workflows/flux.yaml/badge.svg?branch=main)](https://github.com/emerconnelly/homelab/actions/workflows/flux.yaml)
-  [![github-pages](https://github.com/emerconnelly/homelab/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/emerconnelly/homelab/actions/workflows/github-pages.yaml)
+  [![flux](https://github.com/emerconn/homelab/actions/workflows/flux.yaml/badge.svg?branch=main)](https://github.com/emerconnelly/homelab/actions/workflows/flux.yaml)
+  [![github-pages](https://github.com/emerconn/homelab/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/emerconnelly/homelab/actions/workflows/github-pages.yaml)
 
   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/emerconn/homelab)
 
