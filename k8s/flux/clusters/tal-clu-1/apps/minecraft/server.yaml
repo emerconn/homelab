@@ -39,7 +39,7 @@ spec:
       # WAN 25565 TCP > 172.21.0.173 25565 TCP
       cfServerMod: https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip
       removeOldMods: true
-      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv, VII_Rook"
+      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv, VII_Rook, AntacusBantacus"
       ops: "NemmyBangz"
       motd: "nemmy lives here"
       rcon:
