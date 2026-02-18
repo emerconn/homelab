@@ -31,7 +31,7 @@ spec:
       eula: "TRUE"
       version: "1.21.1"
       type: "CURSEFORGE"
-      memory: 10G
+      memory: 12G
       serviceType: LoadBalancer
       loadBalancerIP: 172.21.0.173
       servicePort: 25565
@@ -54,10 +54,10 @@ spec:
     resources:
       requests:
         cpu: 2
-        memory: 10Gi
+        memory: 12Gi
       limits:
         cpu: 7
-        memory: 10Gi
+        memory: 12Gi
     livenessProbe:
       periodSeconds: 5
       timeoutSeconds: 1
