@@ -58,7 +58,7 @@ spec:
               accessModes: [ "ReadWriteOnce" ]
               resources:
                 requests:
-                  storage: 5Gi
+                  storage: 50Gi
 
     # Node exporter DaemonSet: exposes host/node-level metrics on each node
     nodeExporter:
