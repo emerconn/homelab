@@ -11,7 +11,7 @@ spec:
         name: wazuh
         namespace: flux-system
       chart: wazuh
-      version: "1.0.17"
+      version: "1.0.18"
   values:
     agent:
       enabled: true
