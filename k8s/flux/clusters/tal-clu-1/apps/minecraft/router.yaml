@@ -63,5 +63,7 @@ spec:
           uuid: 815988f5-6263-4394-845e-4ea1bb2ccbaa
         - name: sadmoos
           uuid: 384fa88d-a788-4870-9dad-692e685dcc32
+        - name: McGiggleBalls
+          uuid: dcb7aa33-baf9-4b2c-a43d-9217d17459ac
     extraEnv:
       AUTO_SCALE_ASLEEP_MOTD: "Server starting up..."
