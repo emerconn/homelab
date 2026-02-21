@@ -1,0 +1,27 @@
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: nfs-delete
+driver: nfs.csi.k8s.io
+deletionPolicy: Delete
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: nfs-retain
+driver: nfs.csi.k8s.io
+deletionPolicy: Retain
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: synology-ext4-delete
+driver: synology-ext4.csi.k8s.io
+deletionPolicy: Delete
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: synology-ext4-retain
+driver: synology-ext4.csi.k8s.io
+deletionPolicy: Retain
