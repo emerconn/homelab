@@ -11,7 +11,7 @@ spec:
         kind: HelmRepository
         name: jetstack
         namespace: flux-system
-      version: "v1.19.3"
+      version: "v1.19.4"
   values:
     crds:
       enabled: true
