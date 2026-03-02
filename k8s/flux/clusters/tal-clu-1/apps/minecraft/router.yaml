@@ -65,5 +65,9 @@ spec:
           uuid: 384fa88d-a788-4870-9dad-692e685dcc32
         - name: McGiggleBalls
           uuid: dcb7aa33-baf9-4b2c-a43d-9217d17459ac
+        - name: Calth_ # klyttoris
+          uuid: acad27b2-9b59-468f-b479-c35ff2d9840d
+        - name: Cloudy_Skiess # klyttoris
+          uuid: 0ef73275-a5e8-45c4-9f28-9638da2cfd9d
     extraEnv:
       AUTO_SCALE_ASLEEP_MOTD: "Server starting up..."
