@@ -40,7 +40,7 @@ spec:
       cfServerMod: https://mediafilez.forgecdn.net/files/7558/613/ServerFiles-5.5.zip
       removeOldMods: true
       maxPlayers: 8
-      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv, VII_Rook, AntacusBantacus, pipebombsales, YIG_BAN, vapidyne, Laicram_Gaming, sadmoos, McGiggleBalls, Calth_, Cloudy_Skiess"
+      whitelist: "NemmyBangz, Narutoooooooo, kinowithluv, VII_Rook, AntacusBantacus, pipebombsales, YIG_BAN, vapidyne, Laicram_Gaming, sadmoos, McGiggleBalls, Calth_, Cloudy_Skiess, DrVell, zzZphynx"
       ops: "NemmyBangz"
       motd: "nemmy lives here"
       rcon:
