@@ -51,7 +51,7 @@ spec:
       storageClass: synology-ext4-retain
       dataDir:
         enabled: true
-        Size: 15Gi
+        Size: 20Gi
     resources:
       requests:
         cpu: 2
