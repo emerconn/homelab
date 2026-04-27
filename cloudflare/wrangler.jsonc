@@ -1,7 +1,7 @@
 {
   "name": "ddns",
   "main": "ddns.js",
-  "compatibility_date": "2024-01-01",
+  "compatibility_date": "2026-04-21",
   "triggers": {
     "crons": [
       "*/5 * * * *"
