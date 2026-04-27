@@ -1,15 +1,11 @@
 {
    "$schema":"./node_modules/wrangler/config-schema.json",
+   "compatibility_date":"2026-04-27",
    "name":"ddns",
    "main":"main.js",
-   "compatibility_date":"2026-04-27",
    "workers_dev":false,
    "preview_urls":false,
-   "triggers":{
-      "crons":[
-         "*/1 * * * *"
-      ]
-   },
+   "placement":"smart",
    "vars":{
       "MIKROTIK_HOSTNAME":"hga09qpb37c.sn.mynetname.net",
       "CF_ZONE_ID":"5f9074561d959f442100a44e0bd2ec36",
@@ -19,6 +15,11 @@
    "secrets":{
       "required":[
          "CF_API_TOKEN"
+      ]
+   },
+   "triggers":{
+      "crons":[
+         "*/1 * * * *"
       ]
    },
    "observability":{
