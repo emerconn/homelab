@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "ddns",
   "main": "ddns.js",
   "compatibility_date": "2026-04-21",
