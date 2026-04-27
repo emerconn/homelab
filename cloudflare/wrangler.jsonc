@@ -8,7 +8,12 @@
     ]
   },
   "observability": {
-    "enabled": true,
-    "invocation_logs": false
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false
+    }
   }
 }
