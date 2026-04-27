@@ -5,7 +5,9 @@
    "main":"main.js",
    "workers_dev":false,
    "preview_urls":false,
-   "placement":"smart",
+   "placement":{
+      "mode":"smart"
+   },
    "vars":{
       "MIKROTIK_HOSTNAME":"hga09qpb37c.sn.mynetname.net",
       "CF_ZONE_ID":"5f9074561d959f442100a44e0bd2ec36",
