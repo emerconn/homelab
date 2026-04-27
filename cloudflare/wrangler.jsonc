@@ -3,6 +3,7 @@
   "name": "ddns",
   "main": "ddns.js",
   "compatibility_date": "2026-04-21",
+  "workers_dev": false,
   "triggers": {
     "crons": [
       "*/5 * * * *"
@@ -16,5 +17,5 @@
     "traces": {
       "enabled": false
     }
-  }
+  },
 }
