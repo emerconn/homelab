@@ -7,7 +7,7 @@
   "preview_urls": false,
   "triggers": {
     "crons": [
-      "*/5 * * * *"
+      "*/1 * * * *"
     ]
   },
   "observability": {
