@@ -1,5 +1,5 @@
 {
-  "name": "mikrotik-ddns",
+  "name": "ddns",
   "main": "ddns.js", // This tells Cloudflare which file to run
   "compatibility_date": "2024-01-01",
   "triggers": {
