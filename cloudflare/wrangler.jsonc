@@ -12,6 +12,9 @@
   },
   "vars": {
     "MIKROTIK_HOSTNAME": "hga09qpb37c.sn.mynetname.net",
+    "CF_ZONE_ID": "5f9074561d959f442100a44e0bd2ec36",
+    "CF_RECORD_ID": "ad0b5969bbeb49411c8affb9bac0486e",
+    "CF_RECORD_NAME": "mc.emerconn.com",
   },
   "observability": {
     "logs": {
