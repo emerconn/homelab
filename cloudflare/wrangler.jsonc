@@ -10,6 +10,9 @@
       "*/1 * * * *"
     ]
   },
+  "vars": {
+    "MIKROTIK_HOSTNAME": "hga09qpb37c.sn.mynetname.net",
+  },
   "observability": {
     "logs": {
       "enabled": true,
@@ -18,5 +21,5 @@
     "traces": {
       "enabled": false
     }
-  },
+  }
 }
