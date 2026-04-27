@@ -1,0 +1,8 @@
+{
+  "name": "mikrotik-ddns",
+  "main": "ddns.js", // This tells Cloudflare which file to run
+  "compatibility_date": "2024-01-01",
+  "triggers": {
+    "crons": ["*/5 * * * *"] // Runs every 5 minutes
+  }
+}
