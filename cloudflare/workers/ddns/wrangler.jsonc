@@ -9,7 +9,6 @@
       "region":"gcp:europe-north1"
    },
    "vars":{
-      "MIKROTIK_HOSTNAME":"hga09qpb37c.sn.mynetname.net",
       "CF_ZONE_ID":"5f9074561d959f442100a44e0bd2ec36",
       "CF_RECORD_ID":"9a19caac4b3ee6d55f6f0b6fd2497cdd",
       "CF_RECORD_NAME":"dns.emerconn.com"
