@@ -1,5 +1,8 @@
 kubeconfig
 talosconfig
+**/ca.crt
+**/ca.key
+
 
 # sops
 *.agekey
