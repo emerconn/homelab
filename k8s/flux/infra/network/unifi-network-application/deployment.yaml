@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: unifi-network-application
-        image: lscr.io/linuxserver/unifi-network-application:10.1.85
+        image: lscr.io/linuxserver/unifi-network-application:10.3.58
         env:
         - name: PUID
           value: "1000"
