@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-VERSION="1.12.4"
+VERSION="1.13.2"
 NODES=(cp-01 cp-02 cp-03 w-01)
 
 # 4 extensions
