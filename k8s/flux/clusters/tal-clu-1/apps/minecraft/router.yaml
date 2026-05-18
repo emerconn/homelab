@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: itzg-minecraft-server-charts
         namespace: flux-system
-      version: "1.4.1"
+      version: "1.5.0"
   interval: 1h
   timeout: 10m
   install:
